@@ -1,0 +1,22 @@
+<script>
+  function calculadora(operacion) {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var resultado;
+    switch (operacion) {
+      case "suma":
+        resultado = num1 + num2;
+        break;
+      case "resta":
+        resultado = num1 - num2;
+        break;
+      case "multiplicacion":
+        resultado = num1 * num2;
+        break;
+      case "division":
+        resultado = num1 / num2;
+        break;
+    }
+    document.getElementById("resultado").innerHTML = resultado;
+  }
+</script>
